@@ -1,0 +1,33 @@
+/* Projects.css */
+
+.Project {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.ProjectHeader {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.ProjectHeader:hover {
+    background-color: #e0e0e0;
+}
+
+.ProjectDetails {
+    padding: 10px;
+}
+
+.ProjectDetails p {
+    margin-bottom: 10px;
+}
+
+.ProjectDetails a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.ProjectDetails a:hover {
+    text-decoration: none;
+}
