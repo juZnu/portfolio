@@ -1,4 +1,3 @@
-
 import './App.css';
 import Header from './Header/Header';
 import AboutMe from './About/AboutMe'
@@ -10,11 +9,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AboutMe id="about" />
-      <Experience id="experience" />
-      <Projects id="projects" />
-      <Contact id="contact" />
-
+      <div className="Content">
+        <AboutMe id="about" />
+        <Experience id="experience" />
+        <Projects id="projects" />
+        <Contact id="contact" />
+      </div>
     </div>
   );
 }

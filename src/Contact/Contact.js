@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section id="contact" className="Contact">
       <h2>Contact</h2>
-      <div className="ContactDetails">
+      <div className="contact-items">
         {contactInfo.map(({ icon, info, link }) => (
           <div key={info} className="contact-item">
             <img src={icon} alt="" className="icon" />

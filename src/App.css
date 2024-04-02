@@ -1,7 +1,28 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
 
+/* Ensure the header sticks to the top */
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  /* Adjust as needed */
+  z-index: 1000;
+  /* Ensure the header appears above other content */
+}
+
+/* Add some padding to the top of the content to prevent it from being hidden under the header */
+.Content {
+  padding-top: 60px;
+  /* Adjust according to the height of your header */
+}
+
+/* Other styles remain the same */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +35,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,6 +52,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -5,35 +5,40 @@
     max-width: 800px;
     /* Adjust width as needed */
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .Experience h2 {
     margin: 20px 0;
+    align-self: flex-start;
+    /* Align heading to the left */
 }
 
 .Job {
     margin-bottom: 40px;
-    /* Space between each job */
+    display: flex;
+    flex-direction: column;
 }
 
 .Job h3 {
     margin: 0;
     padding-bottom: 5px;
+    align-self: flex-start;
+    /* Align job title to the left */
 }
 
 .Job .Dates {
     color: #666;
-    /* Gray color for dates */
+    margin-left: auto;
+    /* Align dates to the right */
 }
 
 .Job ul {
     list-style-type: disc;
-    /* Bullet points for responsibilities/tasks */
     padding-left: 20px;
-    /* Indent bullet points */
 }
 
 .Job ul li {
     margin-bottom: 5px;
-    /* Space between each responsibility/task */
 }

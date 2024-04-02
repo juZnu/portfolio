@@ -16,11 +16,19 @@
     flex-direction: column;
 }
 
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     /* Space between each contact item */
+    width: 50%;
+    /* Each item occupies half the width initially */
 }
 
 .icon {
@@ -39,4 +47,11 @@
 .contact-info:hover {
     text-decoration: underline;
     /* Underline contact info on hover */
+}
+
+@media (max-width: 600px) {
+    .contact-item {
+        width: 100%;
+        /* Each item occupies full width on smaller screens */
+    }
 }
