@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1da98c4c.css",
-    "main.js": "/portfolio/static/js/main.8bc210ca.js",
+    "main.css": "/portfolio/static/css/main.7206d58e.css",
+    "main.js": "/portfolio/static/js/main.d018dcb6.js",
     "static/js/453.cbbcd9d1.chunk.js": "/portfolio/static/js/453.cbbcd9d1.chunk.js",
     "static/media/SQLite.svg": "/portfolio/static/media/SQLite.7c48ed0de265ed5e4e6c57fca5d15375.svg",
     "static/media/ScikitLearn-Dark.svg": "/portfolio/static/media/ScikitLearn-Dark.17d8d5adde4d048744d2617fa2db9938.svg",
@@ -28,12 +28,12 @@
     "static/media/phone-solid.svg": "/portfolio/static/media/phone-solid.db0dc55bf81da89d9766a1e03c1bc81f.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.4fe58d7ec3bbf063476a6c80276c62e0.svg",
     "static/media/x-twitter.svg": "/portfolio/static/media/x-twitter.ba6470df236600ed6347ac7874efdce1.svg",
-    "main.1da98c4c.css.map": "/portfolio/static/css/main.1da98c4c.css.map",
-    "main.8bc210ca.js.map": "/portfolio/static/js/main.8bc210ca.js.map",
+    "main.7206d58e.css.map": "/portfolio/static/css/main.7206d58e.css.map",
+    "main.d018dcb6.js.map": "/portfolio/static/js/main.d018dcb6.js.map",
     "453.cbbcd9d1.chunk.js.map": "/portfolio/static/js/453.cbbcd9d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1da98c4c.css",
-    "static/js/main.8bc210ca.js"
+    "static/css/main.7206d58e.css",
+    "static/js/main.d018dcb6.js"
   ]
 }
