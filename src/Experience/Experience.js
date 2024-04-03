@@ -40,30 +40,36 @@ const internships = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="Experience">
-      <h2>Work Experience</h2>
+    <section className="p-14">
+      <h2 className='px-4 py-2 text-4xl font-bold font-mono'>Work Experience</h2>
       {workExperience.map((job, index) => (
-        <div key={index} className="Job">
-          <h3>{`${job.jobTitle} at ${job.companyName}`}</h3>
-          <p className="Dates">{`${job.startDate} - ${job.endDate}`}</p>
-          <ul>
+        <article key={index} className="px-4 py-2 font-mono text-justify">
+          <div className='flex justify-between'>
+            <h3 className='text-left text-2xl font-bold'>{job.jobTitle}</h3>
+            <p className="text-right text-xl">{`${job.startDate} - ${job.endDate}`}</p>
+          </div>
+          <h3 className='text-xl'>{job.companyName}</h3>
+          <ul aria-label="Responsibilities" className='list-disc pl-5'>
             {job.responsibilities.map((responsibility, idx) => (
               <li key={idx}>{responsibility}</li>
             ))}
           </ul>
-        </div>
+        </article>
       ))}
-      <h2>Internships</h2>
+      <h2 className='px-4 py-2 text-4xl font-bold font-mono'>Internships</h2>
       {internships.map((intern, index) => (
-        <div key={index} className="Job">
-          <h3>{`${intern.role} at ${intern.company}`}</h3>
-          <p className="Dates">{intern.duration}</p>
-          <ul>
+        <article key={index} className="px-4 py-2 font-mono text-justify">
+          <div className='flex justify-between'>
+            <h3 className='text-left text-2xl font-bold'>{intern.role}</h3>
+            <p className="text-right text-xl">{intern.duration}</p>
+          </div>
+          <h3 className='text-xl'>{intern.company}</h3>
+          <ul aria-label="Tasks" className='list-disc pl-5'>
             {intern.tasks.map((task, idx) => (
               <li key={idx}>{task}</li>
             ))}
           </ul>
-        </div>
+        </article>
       ))}
     </section>
   );

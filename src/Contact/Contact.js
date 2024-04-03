@@ -1,5 +1,6 @@
-import React from 'react';
-import './Contact.css'; // Ensure your CSS styles are defined for .icon and .contact-info
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+// Ensure your CSS styles are defined for .icon and .contact-info if needed
 
 // Import SVGs for contact icons
 import mobileIcon from './Icons/phone-solid.svg';
@@ -36,22 +37,47 @@ const contactInfo = [
 ];
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset(); // Resets form after submission
+  };
+
   return (
-    <section id="contact" className="Contact">
-      <h2>Contact</h2>
-      <div className="contact-items">
-        {contactInfo.map(({ icon, info, link }) => (
-          <div key={info} className="contact-item">
-            <img src={icon} alt="" className="icon" />
-            {link ? (
-              <a href={link} className="contact-info" target="_blank" rel="noopener noreferrer">
-                {info}
-              </a>
-            ) : (
-              <p className="contact-info">{info}</p>
-            )}
-          </div>
-        ))}
+    <section id="contact" className="p-14 min-h-screen w-full flex flex-col md:flex-row">
+      <div className="w-full md:w-1/2 h-full flex flex-col justify-center p-10">
+        <h2 className='text-4xl font-bold text-gray-800 mb-10'>Contact Me</h2>
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
+          <input type="text" name="user_name" placeholder="Your Name" required className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="email" name="user_email" placeholder="Your Email" required className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <textarea name="message" placeholder="Your Message" required className="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" style={{ minHeight: '150px' }}></textarea>
+          <button type="submit" className="px-6 py-3 bg-blue-500 text-white font-bold rounded hover:bg-blue-600 transition-colors duration-300">Send</button>
+        </form>
+      </div>
+      <div className="w-full md:w-1/2 h-full flex flex-col justify-center p-10">
+        <h2 className='text-4xl font-bold text-gray-800 mb-10'>My Contact Details</h2>
+        <div className="space-y-4">
+          {contactInfo.map(({ icon, info, link }) => (
+            <div key={info} className="flex items-center space-x-4">
+              <img src={icon} alt="" className="w-8 h-8" />
+              {link ? (
+                <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-lg">
+                  {info}
+                </a>
+              ) : (
+                <span className="text-lg">{info}</span>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

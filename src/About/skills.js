@@ -18,28 +18,34 @@ import scikitLearnIcon from './icons/ScikitLearn-Dark.svg';
 import seleniumIcon from './icons/Selenium.svg';
 import sqliteIcon from './icons/SQLite.svg';
 import html5Icon from './icons/html5.svg'
+import mongodbIcon from './icons/mongodb.svg'
+import tailwindIcon from './icons/tailwind-css-svgrepo-com.svg'
 
 // Construct a skills array with skill names and their corresponding icons
 const skills = [
-  { name: 'Bootstrap', icon: bootstrapIcon },
-  { name: 'CSS', icon: cssIcon },
+  { name: 'Python', icon: pythonIcon },
+  { name: 'React', icon: reactIcon },
   { name: 'Django', icon: djangoIcon },
-  { name: 'Docker', icon: dockerIcon },
-  { name: 'Git', icon: gitIcon },
+  { name: 'HTML5', icon: html5Icon },
   { name: 'JavaScript', icon: javaScriptIcon },
   { name: 'MySQL', icon: mySQLIcon },
+  { name: 'Redux', icon: reduxIcon },
+  { name: 'PostgreSQL', icon: postgreSQLIcon },
+  { name: 'MongoDB', icon: mongodbIcon },
+  { name: 'SQLite', icon: sqliteIcon },
+  { name: 'CSS', icon: cssIcon },
+  { name: 'Tailwind', icon:tailwindIcon},
+  { name: 'Bootstrap', icon: bootstrapIcon },
+  { name: 'Docker', icon: dockerIcon },
+  { name: 'Git', icon: gitIcon },
   { name: 'NodeJS', icon: nodeJSIcon },
   { name: 'Npm', icon: npmIcon },
-  { name: 'PostgreSQL', icon: postgreSQLIcon },
   { name: 'PyCharm', icon: pyCharmIcon },
-  { name: 'Python', icon: pythonIcon },
   { name: 'PyTorch', icon: pyTorchIcon },
-  { name: 'React', icon: reactIcon },
-  { name: 'Redux', icon: reduxIcon },
   { name: 'ScikitLearn', icon: scikitLearnIcon },
   { name: 'Selenium', icon: seleniumIcon },
-  { name: 'SQLite', icon: sqliteIcon },
-  { name: 'HTML5', icon: html5Icon },
+  
+  
   // Add other skills as needed
 ];
 
