@@ -3,7 +3,7 @@ import skills from './skills';
 
 export default function AboutMe() {
   return (
-    <section className="p-14">
+    <section className="p-14 min-h-screen w-full">
       <h2 className='px-4 py-2 text-5xl font-bold font-mono'>About Me</h2>
       <p className='px-4 py-2 text-xl font-mono text-justify'>Hi, I'm Jishnu Rahul Kanisetty, a passionate full-stack developer with a keen interest in AI and machine learning technologies. With a strong foundation in computer science and extensive experience in Django, React, and SQL, I'm constantly exploring new technologies to solve complex problems.</p>
       <h3 className='px-4 py-2 text-5xl font-bold font-mono'>Skills</h3>

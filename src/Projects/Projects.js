@@ -17,7 +17,7 @@ const projectData = [
     description: 'Allflix is a comprehensive platform that connects movie enthusiasts with the vast world of cinema. Drawing inspiration from IMDB, Allflix offers detailed information on movies, TV shows, actors, and filmmakers from around the globe. From the latest box office hits to timeless classics, Allflix provides users with synopses, ratings, reviews, and trailers, making it the ultimate resource for exploring and discovering new content. Built with React and Node.js, Allflix features a user-friendly interface and powerful search capabilities, ensuring that your next favorite movie or TV show is just a click away',
     githubLink: 'https://github.com/juZnu/Allflix'
   },
-  // Add more projects as needed
+  
 ];
 
 const Projects = () => {
@@ -28,7 +28,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="p-14">
+    <section className="p-14 min-h-screen w-full">
       <h2 className='px-4 py-4 text-4xl font-bold font-mono'>Projects</h2>
       {projectData.map((project, index) => (
         <div key={index} className="bg-slate-400 rounded-md p-4 mb-4">

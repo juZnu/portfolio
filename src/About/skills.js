@@ -17,11 +17,16 @@ import reduxIcon from './icons/Redux.svg';
 import scikitLearnIcon from './icons/ScikitLearn-Dark.svg';
 import seleniumIcon from './icons/Selenium.svg';
 import sqliteIcon from './icons/SQLite.svg';
-import html5Icon from './icons/html5.svg'
-import mongodbIcon from './icons/mongodb.svg'
-import tailwindIcon from './icons/tailwind-css-svgrepo-com.svg'
+import html5Icon from './icons/html5.svg';
+import mongodbIcon from './icons/mongodb.svg';
+import tailwindIcon from './icons/tailwind-css-svgrepo-com.svg';
+import numpyIcon from './icons/numpy-svgrepo-com.svg';
+import pandasIcon from './icons/pandas-svgrepo-com.svg';
+import vscodeIcon from './icons/vs-code-svgrepo-com.svg';
+import linuxIcon from './icons/linux-svgrepo-com.svg';
+import adobeXDIcon from './icons/adobe-xd-svgrepo-com.svg';
+import jestIcon from './icons/jest-snapshot-svgrepo-com.svg'
 
-// Construct a skills array with skill names and their corresponding icons
 const skills = [
   { name: 'Python', icon: pythonIcon },
   { name: 'React', icon: reactIcon },
@@ -34,9 +39,12 @@ const skills = [
   { name: 'MongoDB', icon: mongodbIcon },
   { name: 'SQLite', icon: sqliteIcon },
   { name: 'CSS', icon: cssIcon },
+  { name: 'Jest', icon: jestIcon },
   { name: 'Tailwind', icon:tailwindIcon},
   { name: 'Bootstrap', icon: bootstrapIcon },
   { name: 'Docker', icon: dockerIcon },
+  { name: 'Numpy', icon: numpyIcon },
+  { name: 'Pandas', icon: pandasIcon },
   { name: 'Git', icon: gitIcon },
   { name: 'NodeJS', icon: nodeJSIcon },
   { name: 'Npm', icon: npmIcon },
@@ -44,9 +52,9 @@ const skills = [
   { name: 'PyTorch', icon: pyTorchIcon },
   { name: 'ScikitLearn', icon: scikitLearnIcon },
   { name: 'Selenium', icon: seleniumIcon },
-  
-  
-  // Add other skills as needed
+  { name: 'VSCode', icon: vscodeIcon },
+  { name: 'Linux', icon: linuxIcon },
+  { name: 'AdobeXD', icon: adobeXDIcon },
 ];
 
 export default skills;

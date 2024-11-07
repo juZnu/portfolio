@@ -3,19 +3,44 @@ import './Experience.css';
 
 const workExperience = [
   {
-    jobTitle: 'Full Stack Software Engineer',
-    companyName: 'LARSEN & TOUBRO INFOTECH',
-    location: 'Chennai, Tamil Nadu, India',
-    startDate: 'MAY 2018',
-    endDate: 'DEC 2021',
+    jobTitle: 'Software Engineer',
+    companyName: 'Lexim AI',
+    location: 'Milpitas, CA, USA',
+    startDate: 'Oct 2024',
+    endDate: 'Present',
     responsibilities: [
-      'Worked on full-cycle development and project management of a critical React & Django application orchestrating end-to-end functional testing and achieving seamless handling of over 1000 daily API transactions resulting in a robust and scalable system.',
-      'Developed a React-based Single Page Application (SPA) utilizing the Context API for state management leading to a seamless user experience and a 30% increase in page load efficiency.',
-      'Engineered advanced API solutions within Django using mixins class-based and function-based views leveraging the Django Rest Framework to streamline data serialization from PostgreSQL and MongoDB resulting in a 50% increase in backend data retrieval efficiency.',
-      'Seamlessly integrated Tableau SDK within React components dynamically generating data visualizations for over 2000 product interactions contributing to a 20% increase in targeted marketing campaign effectiveness.',
+      'Reduced duplicate React code and introduced reusable components, enhancing loading speed by 20% and improving maintainability.',
+      'Integrated Generative AI with RAG to resolve user queries by retrieving relevant documents and generating context-specific answers, reducing follow-up inquiries by 30%.',
+      'Refined SQL queries, reducing query execution time from 110 seconds to 32 seconds, significantly improving data retrieval speed for high-demand operations.'
+    ],
+  },
+  {
+    jobTitle: 'Full-Stack Engineer',
+    companyName: 'GrassLand Foods',
+    location: 'Princeton, NJ, USA',
+    startDate: 'Feb 2024',
+    endDate: 'Sep 2024',
+    responsibilities: [
+      'Transitioned a monolithic platform to a microservices structure using React and Flask, enabling 500 concurrent users without performance degradation.',
+      'Developed Role-Based Access Control (RBAC) for the user interface, protecting sensitive information and supporting over 25 unique user roles.',
+      'Designed a database with stored procedures to handle warehouse data concurrency, reducing order placement errors by 40% and optimizing 500 weekly transactions.'
+    ],
+  },
+  {
+    jobTitle: 'Software Engineer',
+    companyName: 'LTI Mindtree',
+    location: 'Chennai, Tamil Nadu, India',
+    startDate: 'May 2018',
+    endDate: 'Dec 2021',
+    responsibilities: [
+      'Proactively integrated Tableau SDK with React and Django for real-time manufacturing insights, improving production decision speed by 25%.',
+      'Automated batch-processing of CSV uploads with a Python script, saving 10+ hours weekly for clients by eliminating manual file uploads.',
+      'Developed a reliable database for retrying failed manufacturing requests, achieving 98% uptime and reducing production delays by 15%.',
+      'Created an internal website for banking client employees to log updates, reducing version conflicts and supporting cross-team transparency.'
     ],
   },
 ];
+
 
 const internships = [
   {
@@ -26,21 +51,12 @@ const internships = [
     tasks: [
       'Orchestrated seamless API integrations within the Django framework including Google Maps and Stripe to broaden application functionality, resulting in a 25% increase in user retention.',
     ],
-  },
-  {
-    role: 'Software Engineer Intern',
-    company: 'Cosmic Trade & Co',
-    location: 'Chennai, Tamil Nadu',
-    duration: 'MAY 2016 – APR 2017',
-    tasks: [
-      'Redesigned an Oracle database schema optimization project resulting in a 40% reduction in data retrieval time and a 75% improvement in query execution efficiency.',
-    ],
-  },
+  }
 ];
 
 const Experience = () => {
   return (
-    <section className="p-14">
+    <section className="p-14 min-h-screen w-full">
       <h2 className='px-4 py-2 text-4xl font-bold font-mono'>Work Experience</h2>
       {workExperience.map((job, index) => (
         <article key={index} className="px-4 py-2 font-mono text-justify">
